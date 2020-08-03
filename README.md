@@ -9,7 +9,7 @@ Built with <a href="https://www.w3.org/html/" target="blank">HTML</a> , <a href=
 <p align="center">
 <a href="#"><strong>DEMO</strong></a>
 
-![screenshot of main screen](./img/test_v1.gif)
+![main page](./img/test_v1.gif)
 
 </p>
 
