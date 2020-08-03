@@ -12,3 +12,12 @@ Built with <a href="https://www.w3.org/html/" target="blank">HTML</a> , <a href=
 ![screenshot of main screen](./img/demo.png)
 
 </p>
+
+
+## What's next
+---
+- [ ] ID, Password validation (ex. id must include '@', pw has more than 5 characters or numbers)
+- [ ] Responsive Web design
+- [ ] See more & hide content
+- [ ] Delete comment
+- [ ] Like button
