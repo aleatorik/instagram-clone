@@ -1,14 +1,13 @@
 'use strict';
-
+//  유저가 코멘트 '입력하는' 위치
 const commentInputBox = document.querySelector('.comment-box');
-const newCommentBox = document.querySelector('.content__text');
-const commentContent = document.createTextNode(commentInputBox.value);
-const commentUsername = document.querySelector('.content__id');
-const commentFirstClass = document.querySelector('.info__comment');
 
-// const userId = document.getElementById('userId');
-// const accountName = document.querySelector('account__name');
+// 새로 '생성된 코멘트가 들어갈' 위치
+const newCommentBox = document.querySelector('.contentText');
+const commentUsername = document.querySelector('.contentId');
+const commentFirstClass = document.querySelector('.comment__container');
 
+// 댓글 버튼 색깔 이벤트
 commentInputBox.addEventListener('keyup', (e) => {
   const postBtn = document.querySelector('.postBtn');
   if (commentInputBox.value !== '') {
@@ -18,35 +17,58 @@ commentInputBox.addEventListener('keyup', (e) => {
   }
 });
 
+// 댓글 등록 이벤트
 commentInputBox.addEventListener('keypress', (e) => {
   if (e.keyCode == 13) {
     e.preventDefault();
-    commentInputBox.value = '';
-    commentUsername.innerHTML = 'daseulsong';
+    // '엔터' 받으면 댓글 칸에 내용 지움
+    commentInputBox.value = e.target.value;
 
     // code below means pushing content user types to InputBox
-    // 1. create ul tag with class name inside div tag(info__comment)
-    const ul = document.createElement('ul');
-    const div = document.createElement('div');
-    const li = document.createElement('li');
-    const span = document.createElement('span');
-    const p = document.createElement('p');
+    const infoComment = document.createElement('div');
+    const contentLeft = document.createElement('div');
+    const contentId = document.createElement('span');
+    const contentText = document.createElement('p');
+    const contentHeart = document.createElement('span');
 
-    ul.classList.add('comment__content');
-    commentFirstClass.appendChild(ul);
-    div.classList.add('content__left');
-    ul.appendChild(div);
-    //li.classList.add();
-    div.appendChild(li);
-    span.classList.add('content__id');
-    li.appendChild(span);
-    p.classList.add('content__text');
-    div.appendChild(p);
+    infoComment.classList.add('infoComment');
+    contentLeft.classList.add('contentLeft');
+    contentId.classList.add('contentId');
+    contentText.classList.add('contentText');
+    contentHeart.classList.add('contentHeart');
 
-    div.className = 'content__left';
-    newCommentBox.appendChild(commentContent);
+    // 아이디 자리에 댓글다는 유저이름 넣기
+    contentLeft.innerHTML = 'daseulsong';
+    // 입력된 댓글내용을 dom으로 생성된 위치에 넣기
+    contentText.innerHTML = commentInputBox.value;
+
+    commentFirstClass.appendChild(infoComment);
+    contentLeft.appendChild(contentId);
+    infoComment.appendChild(contentLeft);
+    contentLeft.appendChild(contentText);
+    infoComment.appendChild(contentHeart);
+
+    commentInputBox.value = '';
+    contentHeart.innerHTML = '<i class="far fa-heart"></i>';
   }
 });
 
-//  id(.content__id) 값에는 고정으로 user 식으로 넣고(innerHtml = "something")
-// 오른쪽(.content__text)에만 입력한 content가 받아올 수 있도록 하기
+/*
+<p>
+  <span></span>
+</p>
+
+p.innerHTML = 'hi'
+
+innerHTML은 코드를 초기화한다 =>
+
+<p>
+  hi
+</p>
+
+그러므로 
+contentLeft.innerHTML = 'daseulsong';
+contentText.innerHTML = commentInputBox.value;
+
+위치가 맨 아래에 있을 경우, span하고 p태그 생성을 하지 못한다 (초기화 되었기 때문에)
+*/

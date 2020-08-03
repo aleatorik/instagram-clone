@@ -140,13 +140,20 @@ main {
   margin-bottom: 11px;
 }
 
-.info__comment {
+.comment__container {
   overflow-y: scroll;
   height: 50px;
+  margin-left: 15px;
 }
 
-.info__comment::-webkit-scrollbar {
+.comment__container::-webkit-scrollbar {
   display: none;
+}
+
+.infoComment {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .icons,
@@ -207,6 +214,8 @@ main {
   color: var(--color-light-grey);
 }
 
+/* comment part */
+
 .comment {
   display: flex;
   justify-content: space-between;
@@ -240,7 +249,7 @@ main {
 }
 
 .comment__content,
-.content__left {
+.contentLeft {
   display: flex;
 }
 
@@ -249,11 +258,11 @@ main {
   margin-bottom: 5px;
 }
 
-.content__id {
+.contentId {
   margin-right: 8px;
 }
 
-.content__heart {
+.contentHeart {
   font-size: var(--font-small);
   margin-right: 13px;
 }
