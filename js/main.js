@@ -38,7 +38,7 @@ commentInputBox.addEventListener('keypress', (e) => {
     contentHeart.classList.add('contentHeart');
 
     // 아이디 자리에 댓글다는 유저이름 넣기
-    contentLeft.innerHTML = 'daseulsong';
+    contentLeft.innerHTML = 'daseulsongme';
     // 입력된 댓글내용을 dom으로 생성된 위치에 넣기
     contentText.innerHTML = commentInputBox.value;
 
