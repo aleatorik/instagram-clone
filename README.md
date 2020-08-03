@@ -9,13 +9,14 @@ Built with <a href="https://www.w3.org/html/" target="blank">HTML</a> , <a href=
 <p align="center">
 <a href="#"><strong>DEMO</strong></a>
 
-![screenshot of main screen](./img/demo.png)
+![screenshot of main screen](./img/test_v1.gif)
 
 </p>
 
-
 ## What's next
+
 ---
+
 - [ ] ID, Password validation (ex. id must include '@', pw has more than 5 characters or numbers)
 - [ ] Responsive Web design
 - [ ] See more & hide content
