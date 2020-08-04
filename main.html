@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>main-page</title>
+    <title>instagram</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -20,9 +21,9 @@
     <header>
       <div class="header__container">
         <ul class="logo">
-          <li><i class="fab fa-instagram"></i></li>
-          <li><p>|</p></li>
-          <li><img src="img/logo_text.png" /></li>
+          <li>
+            <img src="./img/logo.png" />
+          </li>
         </ul>
         <div class="search">
           <input type="text" placeholder="검색" class="search__bar" />
@@ -34,21 +35,32 @@
           <div class="icons__list">
             <li>
               <img
-                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+                src="https://www.pinclipart.com/picdir/big/381-3811668_png-file-svg-instagram-home-icon-vector-clipart.png"
               />
-              <div class="redDot"></div>
+            </li>
+            <li>
+              <button class="icons__list selected">
+                <img
+                  src="https://static.thenounproject.com/png/3084968-200.png"
+                />
+                <span class="icons__count">7</span>
+              </button>
             </li>
             <li>
               <img
-                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+                src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/32/519779-90_Compass-512.png"
               />
-              <div class="redDot"></div>
             </li>
             <li>
+              <img src="./img/heart.png" />
+            </li>
+            <li class="icon__list--account">
               <img
-                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+                alt="author__picture"
+                width="30px"
+                height="30px"
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/101538364_247245499886357_4704375428469489664_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=6StllSwEDLUAX9VeDb0&oh=22e16107791e80cfdc5ff5dde09cfe29&oe=5F504E73"
               />
-              <div class="redDot"></div>
             </li>
           </div>
         </ul>
@@ -63,7 +75,7 @@
                 src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/101538364_247245499886357_4704375428469489664_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=6StllSwEDLUAX9VeDb0&oh=22e16107791e80cfdc5ff5dde09cfe29&oe=5F504E73"
               />
               <div class="account__info">
-                <span class="account__name">daseulsongme</span>
+                <span class="account__id">daseulsongme</span>
                 <span class="account__location">Meißen, Germany</span>
               </div>
             </div>
@@ -108,7 +120,7 @@
                 <span>caomei101님 외 7명이 좋아합니다</span>
               </div>
               <ul class="metadata">
-                <li><span>daseulsongme</span></li>
+                <li><span class="metadata__userName">daseulsongme</span></li>
                 <li>
                   <p>
                     "Liebeskummer...💔 "
@@ -150,8 +162,8 @@
                   src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/101538364_247245499886357_4704375428469489664_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=6StllSwEDLUAX9VeDb0&oh=22e16107791e80cfdc5ff5dde09cfe29&oe=5F504E73"
                 />
                 <div class="account">
-                  <span class="account__name">daseulsongme</span>
-                  <span class="account__location">Daseul</span>
+                  <span class="account__id">daseulsongme</span>
+                  <span class="account__name">Daseul</span>
                 </div>
               </div>
             </li>
@@ -167,7 +179,7 @@
                       src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/116471741_2451918528436071_3403925877115793886_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=ChLig_-k9rwAX9-3Jng&oh=ad469588fee992ce0159af40fb60691a&oe=5F4A8827"
                     />
                     <div class="account__info">
-                      <span class="account__name">fishror23</span>
+                      <span class="account__id">fishror23</span>
                       <span class="account__time">2시간 전</span>
                     </div>
                   </li>
@@ -176,7 +188,7 @@
                       src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/43913375_249044715959605_1668311000236949504_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=pl_eGaftj4kAX-ad4us&oh=cca0f205830e88371f237b908294341e&oe=5F4C7626"
                     />
                     <div class="account__info">
-                      <span class="account__name">junghyunjoo</span>
+                      <span class="account__id">junghyunjoo</span>
                       <span class="account__time">1시간 전</span>
                     </div>
                   </li>
@@ -185,7 +197,7 @@
                       src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/80319706_631139287713292_159190102378020864_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=m0iyU1DREJQAX9TYmri&oh=d52ec427e622493193e52ca79d9c4bac&oe=5F4C926D"
                     />
                     <div class="account__info">
-                      <span class="account__name">khut0814</span>
+                      <span class="account__id">khut0814</span>
                       <span class="account__time">13분 전</span>
                     </div>
                   </li>
@@ -205,7 +217,7 @@
                     />
 
                     <div class="account__info">
-                      <span class="account__name">tjskdiw32</span>
+                      <span class="account__id">tjskdiw32</span>
                       <span class="account__follow">회원님을 팔로우합니다</span>
                     </div>
                     <span class="followBtn">팔로우</span>
@@ -215,7 +227,7 @@
                       src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/73407386_436742847280516_7688568694854647808_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=IZYaDgxMbOEAX-2BfiZ&oh=658e71a12ed01bf35d46a16fa2e2b217&oe=5F4C592C"
                     />
                     <div class="account__info">
-                      <span class="account__name">trueman89</span>
+                      <span class="account__id">trueman89</span>
                       <span class="account__follow">회원님을 팔로우합니다</span>
                     </div>
                     <span class="followBtn">팔로우</span>
@@ -226,7 +238,7 @@
                     />
 
                     <div class="account__info">
-                      <span class="account__name">smileday.wj</span>
+                      <span class="account__id">smileday.wj</span>
                       <span class="account__follow">회원님을 팔로우합니다</span>
                     </div>
                     <span class="followBtn">팔로우</span>
@@ -237,9 +249,9 @@
             <li>
               <div class="description">
                 <div class="tag1">
-                  <a href="#">instagram 정보</a>
+                  <a href="#">소개</a>
                   <span>&middot;</span>
-                  <a href="#">지원</a>
+                  <a href="#">도움말</a>
                   <span>&middot;</span>
                   <a href="#">홍보 센터</a>
                   <span>&middot;</span>
@@ -252,15 +264,15 @@
                   <span>&middot;</span>
                   <a href="#">약관</a>
                   <span>&middot;</span>
-                  <a href="#">디렉터리</a>
+                  <a href="#">위치</a>
                   <span>&middot;</span>
-                  <a href="#">프로필</a>
+                  <a href="#">인기 계정</a>
                   <span>&middot;</span>
                   <a href="#">해시태그</a>
                   <span>&middot;</span>
                   <a href="#">언어</a>
                 </div>
-                <div class="rights">© 2020 INSTAGRAM</div>
+                <div class="rights">© 2020 INSTAGRAM FROM FACEBOOK</div>
               </div>
             </li>
           </ul>
