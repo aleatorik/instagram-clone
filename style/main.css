@@ -54,6 +54,7 @@ ul .icons {
 
 header .icons {
   display: flex;
+  margin-right: 85px;
 }
 
 header .icons .icons__list {
@@ -66,8 +67,8 @@ header .icons li {
 }
 
 header .icons li img {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
 }
 
 .icon__list--account img {
@@ -82,11 +83,12 @@ header .icons li img {
 }
 
 .icons__count {
+  font-weight: lighter;
   background-color: var(--color-red);
-  border-radius: 50%;
   color: var(--color-white);
-  width: 24px;
-  height: 24px;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
   line-height: 24px;
   display: inline-block;
   position: absolute;
