@@ -23,3 +23,6 @@ Built with <a href="https://www.w3.org/html/" target="blank">HTML</a> , <a href=
 - [ ] See more & hide content
 - [ ] Delete comment
 - [ ] Like button
+- [ ] Story highlights tab
+- [ ] Align position of elements on the searchbar when typing
+- [ ] Complete entire login page besides login box
