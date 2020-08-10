@@ -35,16 +35,19 @@ header {
   position: relative;
 }
 
-.search__bar {
+.search__bar::-webkit-input-placeholder {
   text-align: center;
-  padding: 8px 42px;
+}
+
+.search__bar {
+  padding: 7px 27px;
   margin-top: 8px;
 }
 
 .search__glass {
   position: absolute;
-  top: 16px;
-  right: 129px;
+  top: 15px;
+  right: 115px;
   color: var(--color-grey);
 }
 
@@ -125,6 +128,24 @@ main {
   border: 1px solid var(--color-grey);
 }
 
+.account {
+  display: flex;
+}
+
+.account .account__info {
+  display: flex;
+  flex: 1 1 60%;
+  flex-direction: column;
+  margin-left: 18px;
+}
+
+.author img,
+.account img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
 .account__container {
   display: flex;
   justify-content: space-between;
@@ -181,6 +202,7 @@ main {
 .icon-list__left {
   font-size: var(--font-regular);
   margin-top: 13px;
+  margin-left: -4px;
 }
 
 .icon-list__left li {
@@ -303,23 +325,13 @@ main {
 
 .author {
   display: flex;
+  margin-left: 10px;
 }
 
 .author .account {
   display: flex;
   flex-direction: column;
-}
-
-.account {
-  display: flex;
   margin-left: 10px;
-}
-
-.author img,
-.account img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
 }
 
 .account .account__id {
@@ -335,13 +347,6 @@ main {
 .account .account__location {
   font-weight: lighter;
   font-size: var(--font-micro);
-}
-
-.account .account__info {
-  display: flex;
-  flex: 1 1 60%;
-  flex-direction: column;
-  margin-left: 18px;
 }
 
 .account__follow,
@@ -373,8 +378,9 @@ main {
   font-weight: var(--weight-semi-bold);
 }
 
-.account__list {
+.account__list .account {
   margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 .account__list li {
@@ -395,6 +401,7 @@ main {
 .description {
   font-size: var(--font-small);
   font-weight: lighter;
+  margin-left: 11px;
 }
 
 .tag1,
